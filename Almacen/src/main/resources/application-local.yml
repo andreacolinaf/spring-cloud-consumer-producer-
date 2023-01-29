@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    function:
+      definition: newOrderEvent;
+    stream:
+      bindings:
+        newOrderEvent-in-0:
+          destination: new-order
+          group: almacen

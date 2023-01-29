@@ -1,10 +1,6 @@
 spring:
   cloud:
-    function:
-      definition: newOrderEvent
     stream:
       bindings:
-        newOrderEvent-out-1:
+        newOrderEvent-out-0:
           destination: new-order
-server:
-  port: 8080

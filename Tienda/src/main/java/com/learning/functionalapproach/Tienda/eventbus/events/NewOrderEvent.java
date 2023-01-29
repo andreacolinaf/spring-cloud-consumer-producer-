@@ -1,8 +1,16 @@
 package com.learning.functionalapproach.Tienda.eventbus.events;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
 public class NewOrderEvent {
 
-    private final int orderId;
+    int orderId;
 
     public NewOrderEvent(int orderId) {
         this.orderId = orderId;
